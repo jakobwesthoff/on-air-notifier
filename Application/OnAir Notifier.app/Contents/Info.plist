@@ -56,7 +56,7 @@
 	<key>NSMainNibFile</key>
 	<string>OnAirNotifier</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
+	<string>MyNSApplication</string>
 	<key>NSSupportsAutomaticTermination</key>
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
