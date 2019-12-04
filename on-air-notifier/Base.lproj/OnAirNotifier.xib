@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="on_air_notifier" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="n3S-fW-myn">
+            <items>
+                <menuItem title="OnAir" enabled="NO" id="oZm-CK-wri">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="sBH-QY-Soo"/>
+                <menuItem title="Preferences..." id="IYf-u5-jI9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClickedWithSender:" target="tdX-Bg-1Mh" id="g2p-FX-ByR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" id="i7V-kd-HeM">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClickedWithSender:" target="tdX-Bg-1Mh" id="MFX-1r-woE"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="66" y="-112"/>
+        </menu>
+        <customObject id="tdX-Bg-1Mh" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="on_air_notifier" customModuleProvider="target">
+            <connections>
+                <outlet property="onAirMenuItem" destination="oZm-CK-wri" id="eak-x6-hBX"/>
+                <outlet property="onAirView" destination="NvE-I4-FHA" id="9pn-R6-fIu"/>
+                <outlet property="statusMenu" destination="n3S-fW-myn" id="8A4-Jb-521"/>
+            </connections>
+        </customObject>
+        <customView id="NvE-I4-FHA" userLabel="OnAirView" customClass="OnAirView" customModule="on_air_notifier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-rv-ag5">
+                    <rect key="frame" x="20" y="6" width="24" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" imageScaling="proportionallyDown" image="onAir" id="8L1-Ps-rCY"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KK5-Qg-Emz">
+                    <rect key="frame" x="50" y="10" width="48" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="On Air!" id="CrB-4S-Ody">
+                        <font key="font" metaFont="systemSemibold" size="13"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <connections>
+                <outlet property="onAirImage" destination="eNP-rv-ag5" id="Z9U-AN-DzO"/>
+                <outlet property="onAirLabel" destination="KK5-Qg-Emz" id="dds-me-EOV"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="57"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="onAir" width="768" height="768"/>
+    </resources>
+</document>

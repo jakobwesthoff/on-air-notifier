@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3604E98A2397CDE100D03DB9 /* OnAirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604E9892397CDE100D03DB9 /* OnAirView.swift */; };
+		3604E98F2397DA8800D03DB9 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604E98D2397DA8800D03DB9 /* PreferencesWindow.swift */; };
+		3604E9902397DA8800D03DB9 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3604E98E2397DA8800D03DB9 /* PreferencesWindow.xib */; };
 		36207A462397AA0A00B5604B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36207A452397AA0A00B5604B /* AppDelegate.swift */; };
 		36207A482397AA0B00B5604B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36207A472397AA0B00B5604B /* Assets.xcassets */; };
-		36207A4B2397AA0B00B5604B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36207A492397AA0B00B5604B /* MainMenu.xib */; };
+		36207A4B2397AA0B00B5604B /* OnAirNotifier.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36207A492397AA0B00B5604B /* OnAirNotifier.xib */; };
+		36E5E4BF2397AB1C00018859 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E5E4BE2397AB1C00018859 /* StatusMenuController.swift */; };
+		36E5E4C12397B1CB00018859 /* CameraWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E5E4C02397B1CB00018859 /* CameraWatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3604E9892397CDE100D03DB9 /* OnAirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAirView.swift; sourceTree = "<group>"; };
+		3604E98D2397DA8800D03DB9 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		3604E98E2397DA8800D03DB9 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		36207A422397AA0A00B5604B /* on-air-notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "on-air-notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36207A452397AA0A00B5604B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36207A472397AA0B00B5604B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36207A4A2397AA0B00B5604B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		36207A4A2397AA0B00B5604B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OnAirNotifier.xib; sourceTree = "<group>"; };
 		36207A4C2397AA0B00B5604B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36207A4D2397AA0B00B5604B /* on_air_notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = on_air_notifier.entitlements; sourceTree = "<group>"; };
+		36E5E4BE2397AB1C00018859 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		36E5E4C02397B1CB00018859 /* CameraWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +48,9 @@
 				36207A442397AA0A00B5604B /* on-air-notifier */,
 				36207A432397AA0A00B5604B /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		36207A432397AA0A00B5604B /* Products */ = {
 			isa = PBXGroup;
@@ -53,9 +65,14 @@
 			children = (
 				36207A452397AA0A00B5604B /* AppDelegate.swift */,
 				36207A472397AA0B00B5604B /* Assets.xcassets */,
-				36207A492397AA0B00B5604B /* MainMenu.xib */,
+				36207A492397AA0B00B5604B /* OnAirNotifier.xib */,
 				36207A4C2397AA0B00B5604B /* Info.plist */,
 				36207A4D2397AA0B00B5604B /* on_air_notifier.entitlements */,
+				36E5E4BE2397AB1C00018859 /* StatusMenuController.swift */,
+				36E5E4C02397B1CB00018859 /* CameraWatcher.swift */,
+				3604E9892397CDE100D03DB9 /* OnAirView.swift */,
+				3604E98D2397DA8800D03DB9 /* PreferencesWindow.swift */,
+				3604E98E2397DA8800D03DB9 /* PreferencesWindow.xib */,
 			);
 			path = "on-air-notifier";
 			sourceTree = "<group>";
@@ -119,7 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36207A482397AA0B00B5604B /* Assets.xcassets in Resources */,
-				36207A4B2397AA0B00B5604B /* MainMenu.xib in Resources */,
+				3604E9902397DA8800D03DB9 /* PreferencesWindow.xib in Resources */,
+				36207A4B2397AA0B00B5604B /* OnAirNotifier.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E5E4BF2397AB1C00018859 /* StatusMenuController.swift in Sources */,
+				3604E98F2397DA8800D03DB9 /* PreferencesWindow.swift in Sources */,
+				36E5E4C12397B1CB00018859 /* CameraWatcher.swift in Sources */,
+				3604E98A2397CDE100D03DB9 /* OnAirView.swift in Sources */,
 				36207A462397AA0A00B5604B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +159,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		36207A492397AA0B00B5604B /* MainMenu.xib */ = {
+		36207A492397AA0B00B5604B /* OnAirNotifier.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				36207A4A2397AA0B00B5604B /* Base */,
 			);
-			name = MainMenu.xib;
+			name = OnAirNotifier.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
