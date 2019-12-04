@@ -17,10 +17,13 @@ class PreferencesWindow: NSWindowController, NSWindowDelegate {
     super.windowDidLoad()
 
     self.urlTextField.stringValue = UserDefaults.standard.string(forKey: "url") ?? ""
+  }
 
+  public func sendToFrontAndShow() {
     self.window?.center()
     self.window?.makeKeyAndOrderFront(nil)
     NSApp.activate(ignoringOtherApps: true)
+    self.showWindow(nil)
   }
 
   public func windowWillClose(_ notification: Notification) {

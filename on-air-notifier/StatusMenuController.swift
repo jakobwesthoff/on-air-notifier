@@ -45,7 +45,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
   }
   
   @IBAction func preferencesClicked(sender: NSMenuItem) {
-    preferencesWindow.showWindow(nil)
+    preferencesWindow.sendToFrontAndShow()
   }
   
   @IBAction func quitClicked(sender: NSMenuItem) {
