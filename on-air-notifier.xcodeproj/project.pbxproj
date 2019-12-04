@@ -13,6 +13,7 @@
 		36207A462397AA0A00B5604B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36207A452397AA0A00B5604B /* AppDelegate.swift */; };
 		36207A482397AA0B00B5604B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36207A472397AA0B00B5604B /* Assets.xcassets */; };
 		36207A4B2397AA0B00B5604B /* OnAirNotifier.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36207A492397AA0B00B5604B /* OnAirNotifier.xib */; };
+		36AAE5752398762D00279C37 /* MyNSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAE5742398762D00279C37 /* MyNSApplication.swift */; };
 		36E5E4BF2397AB1C00018859 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E5E4BE2397AB1C00018859 /* StatusMenuController.swift */; };
 		36E5E4C12397B1CB00018859 /* CameraWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E5E4C02397B1CB00018859 /* CameraWatcher.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		36207A4A2397AA0B00B5604B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OnAirNotifier.xib; sourceTree = "<group>"; };
 		36207A4C2397AA0B00B5604B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36207A4D2397AA0B00B5604B /* on_air_notifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = on_air_notifier.entitlements; sourceTree = "<group>"; };
+		36AAE5742398762D00279C37 /* MyNSApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNSApplication.swift; sourceTree = "<group>"; };
 		36E5E4BE2397AB1C00018859 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		36E5E4C02397B1CB00018859 /* CameraWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				3604E9892397CDE100D03DB9 /* OnAirView.swift */,
 				3604E98D2397DA8800D03DB9 /* PreferencesWindow.swift */,
 				3604E98E2397DA8800D03DB9 /* PreferencesWindow.xib */,
+				36AAE5742398762D00279C37 /* MyNSApplication.swift */,
 			);
 			path = "on-air-notifier";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				36E5E4C12397B1CB00018859 /* CameraWatcher.swift in Sources */,
 				3604E98A2397CDE100D03DB9 /* OnAirView.swift in Sources */,
 				36207A462397AA0A00B5604B /* AppDelegate.swift in Sources */,
+				36AAE5752398762D00279C37 /* MyNSApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
