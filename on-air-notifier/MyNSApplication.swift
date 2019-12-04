@@ -12,22 +12,22 @@ class MyNSApplication: NSApplication {
       if (event.modifierFlags.rawValue & NSEvent.ModifierFlags.deviceIndependentFlagsMask.rawValue) == commandKey {
         switch event.charactersIgnoringModifiers! {
         case "x":
-          if NSApp.sendAction(#selector(NSText.cut(_:)), to: nil, from: self) { return }
+          if self.sendAction(#selector(NSText.cut(_:)), to: nil, from: self) { return }
         case "c":
-          if NSApp.sendAction(#selector(NSText.copy(_:)), to: nil, from: self) { return }
+          if self.sendAction(#selector(NSText.copy(_:)), to: nil, from: self) { return }
         case "v":
-          if NSApp.sendAction(#selector(NSText.paste(_:)), to: nil, from: self) { return }
+          if self.sendAction(#selector(NSText.paste(_:)), to: nil, from: self) { return }
         case "z":
-          if NSApp.sendAction(Selector(("undo:")), to: nil, from: self) { return }
+          if self.sendAction(Selector(("undo:")), to: nil, from: self) { return }
         case "a":
-          if NSApp.sendAction(#selector(NSStandardKeyBindingResponding.selectAll(_:)), to: nil, from: self) { return }
+          if self.sendAction(#selector(NSStandardKeyBindingResponding.selectAll(_:)), to: nil, from: self) { return }
         default:
           break
         }
       }
       else if (event.modifierFlags.rawValue & NSEvent.ModifierFlags.deviceIndependentFlagsMask.rawValue) == commandShiftKey {
         if event.charactersIgnoringModifiers == "Z" {
-          if NSApp.sendAction(Selector(("redo:")), to: nil, from: self) { return }
+          if self.sendAction(Selector(("redo:")), to: nil, from: self) { return }
         }
       }
     }
